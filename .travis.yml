@@ -17,7 +17,6 @@ env:
   - TESTS="integration" KITCHEN_REGEXP=debian-6
   - TESTS="integration" KITCHEN_REGEXP=debian-7
   - TESTS="integration" KITCHEN_REGEXP=debian-8
-  - TESTS="integration" KITCHEN_REGEXP=oraclelinux-6
   - TESTS="integration" KITCHEN_REGEXP=ubuntu-1204
   - TESTS="integration" KITCHEN_REGEXP=ubuntu-1404
   - TESTS="integration" KITCHEN_REGEXP=ubuntu-1410
@@ -54,12 +53,6 @@ matrix:
     env: TESTS="integration" KITCHEN_REGEXP=debian-8
   - rvm: 2.1
     env: TESTS="integration" KITCHEN_REGEXP=debian-8
-  - rvm: 1.9.3
-    env: TESTS="integration" KITCHEN_REGEXP=oraclelinux-6
-  - rvm: 2.0.0
-    env: TESTS="integration" KITCHEN_REGEXP=oraclelinux-6
-  - rvm: 2.1
-    env: TESTS="integration" KITCHEN_REGEXP=oraclelinux-6
   - rvm: 1.9.3
     env: TESTS="integration" KITCHEN_REGEXP=ubuntu-1204
   - rvm: 2.0.0
